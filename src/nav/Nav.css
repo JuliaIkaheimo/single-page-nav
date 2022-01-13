@@ -1,17 +1,22 @@
+
 nav {
-	width: 100%;
+	max-width: 100%;
 	position: sticky;
 	z-index: 10;
 	top: 0;
-	padding: 1.2em 0;
+	padding-inline-end: 5%;
 	color: white;
-	background-color: var(--darkAccent);
+	background-color: #202027;
 	max-height: 4em;
+	display: flex;
+	justify-content: flex-end;
+	
+	
 }
 
 nav span {
 	font-size: 18px;
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid  gold;
 	transition: border-bottom 0.2s ease;
 	transition-delay: 0.25s;
 	margin: 1em;
@@ -24,13 +29,13 @@ nav span:hover {
 }
 
 nav span:hover i {
-	color: gold;
+	color: teal;
 }
 
 nav span.activeClass i {
-	color: gold;
+	color: teal;
 }
 
 nav span.activeClass {
-	border-bottom-color: var(--lightAccent);
+	border-bottom-color: teal;
 }

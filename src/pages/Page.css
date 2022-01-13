@@ -4,17 +4,22 @@ section {
 	justify-content: center;
 	height: 100vh;
 	width: 100%;
-	border-bottom: 1px solid lightgrey;
+	padding-left: 10%;
+	
+	background-color: #202027;
 }
+
 
 section:nth-child(even) {
 	flex-direction: row-reverse;
+	
 }
 
 section img,
 section div {
 	height: auto;
 	width: 100%;
+	padding-right: 10%;
 }
 
 section img {
@@ -22,14 +27,16 @@ section img {
 }
 
 section div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	padding: 1em;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+color: white;
+padding: 10%;
+
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 400px) {
 	section,
 	section:nth-child(even) {
 		flex-direction: column;
@@ -41,3 +48,17 @@ section div {
 		max-width: 100vw;
 	}
 }
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10%;
+
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+  }
+
